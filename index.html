@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sanjana's Portfolio</title>
+</head>
+<body onload=main_sliding()>
+    <section class="hero" id="hero">
+        <div class="header">
+            <video autoplay muted loop id="bg-video">
+                <source src="img/bg_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            <h1><span style="color: rgb(255, 0, 38);" id="letter" class="letter">S</span>anjana.</h1>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <div class="close" id="close"><i class="fas fa-times fa-2x"></i></div>
+                    <li class="top_list"><a href="index.html">Home</a></li>
+                    <li class="top_list"><a href="#about">About</a></li>
+                    <li class="top_list"><a href="#my_services">Services</a></li>
+                    <li class="top_list"><a href="#my_works">My works</a></li>
+                    <li class="top_list"><a href="#contactme">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main" id="main">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span style="color: rgb(255, 0, 38);"><span class="letter">S</span>anjana</span></h1>
+            <h1>Acharya from Bangalore</h1>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <img src="img/about_pic.png" alt="Myimage" class="myimage" id="myimage">
+        <div class="about-info">
+            <h1>About Me</h1>
+            <p class="about_desc">Hey there,<br/>I'm Sanjana S Acharya, a dedicated and enthusiastic learner. Currently pursuing my BTech in Computer Science and Engineering at Presidency University, Bangalore, I thrive on challenges and continuously seek to expand my knowledge. As a self-taught programmer, I am passionate about exploring new technologies and mastering Data Structures and Algorithms using Java for Competitive programming. Moreover, I actively build websites using Javascript, aiming to share my programming skills and collaborate with the vibrant developer community in GitHub. Let's learn and grow together!</p>
+            <div class="three-elements">
+                <p class="element" id="skills">Skills</p>
+                <p class="element" id="experience">Experience</p>
+                <p class="element" id="education">Education</p>
+            </div>
+            <div class="element_info" id="skillBox">
+                <div class="info">
+                    <p class="skill_head">Java & Python</p>
+                    <p class="skill_detail">Problem Solving</p>
+                </div>
+                <div class="info">
+                    <p class="skill_head">Javascript, React.js and WordPress</p>
+                    <p class="skill_detail">Front-end Development</p>
+                </div>
+                <div class="info">
+                    <p class="skill_head">MySQL</p>
+                    <p class="skill_detail">For Database Management</p>
+                </div>
+                <div class="info" id="last_box">
+                    <p class="skill_head">JDBC and Python-MySQL Connectivity</p>
+                    <p class="skill_detail">For seamless connection between backend and database</p>
+                </div>
+            </div>
+            <div class="element_info" id="expBox">
+                <div class="info">
+                    <p class="skill_head">Java Developer Intern</p>
+                    <p class="skill_detail">Digital Bhem<br/>Created a desktop-level movie ticket booking system</p>
+                </div>
+                <div class="info">
+                    <p class="skill_head">Web Developer Intern</p>
+                    <p class="skill_detail">CodeClause<br/>Created beautiful websites using JavaScript</p>
+                </div>
+                <div class="info">
+                    <p class="skill_head">Software Developer Intern</p>
+                    <p class="skill_detail">Datacom<br/>Fixing bugs in Javascript codebase</p>
+                </div>
+                
+            </div>
+            <div class="element_info" id="eduBox">
+                <div class="info">
+                    <p class="skill_head">BTech - Computer Science and Engineering(2021-2025)</p>
+                    <p class="skill_detail">CGPA - 8.85<br/>Presidency University, Bangalore</p>
+                </div>
+                <div class="info">
+                    <p class="skill_head">Grade XII</p>
+                    <p class="skill_detail">Grade - 87%<br/>Saraswathi Vidyalaya,Chennai</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="my_services" id="my_services">
+        <h1>My Services</h1>
+        <div class="services">
+            <div class="service">
+                <div><i class="fas fa-code fa-2x" style="color: blue;"></i></div>
+                <h2>Front-end Development</h2>
+                <p>Creating beautiful websites using Javascript and React.js</p>
+                
+            </div>
+            <div class="service">
+                <div><i class="fas fa-brain fa-2x" style="color: yellow;"></i></div>
+                <h2>Placement Help for Problem Solving</h2>
+                <p> Can help you solve challenging questions </p>
+               
+            </div>
+            <div class="service">
+                <div><i class="fab fa-android fa-2x" style="color: green;"></i></div>
+                <h2>Desktop-Level App Development</h2>
+                <p> Can create desktop-level application using Java as well as Python </p>
+               
+            </div>
+           
+        </div>
+    </section>
+    <section class="my_works" id="my_works">
+        <h1>My Works</h1>
+       
+        <div class="works">
+            <div class="work3" id="first3">
+                <div class="work" style="background-image: url('img/idea_pic.jpeg'); height: 170px; object-fit: cover;">
+                    <h2>IDEA!</h2>
+                    <p class="work_details">Introducing Intelligent Digital Educational Assist: a Python app with Tkinter GUI where users interact with modules, increasing engagement. Features include activity tracking, history, a library for saving lectures, and a recommendation system based on past views.</p>
+                    <a href="https://github.com/Sanjana1304/IDEA" target="_blank"><p class="lm"><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+                <div class="work" style="background-image: url('img/alumni_pic.jpeg'); height: 170px; object-fit: cover;">
+                    <h2 style="color: black;">Alumni Information System</h2>
+                    <p class="work_details">To build a system that will be able to manage alumni data of a school and provide easy access to the same.To allow old and new students of the school to communicate with each other.</p>
+                    <a href="https://github.com/Sanjana1304/Alumni-Information-System" target="_blank"><p class="lm"><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+                <div class="work" style="background-image: url('img/action_pic.jpeg'); height: 170px; object-fit: cover;">
+                    <h2 style="color: black">Action Request System</h2>
+                    <p class="work_details">The product developed would receive customer requests that will be sent to the appropriate faculty. The faculty can then develop software for their clients without extensive consultation with the customers.</p>
+                    <a href="https://github.com/Sanjana1304/Action-Request-System" target="_blank"><p class="lm" style="color: black;"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+            </div>
+            <div class="work3" id="second3">
+                <div class="work" style="background-image: url('img/ecommerce.jpeg'); height: 170px; object-fit: cover;">
+                    <h2>E-commerce App</h2>
+                    <p class="work_details">A clothing e-commerce store where users can buy clothes, add it to their cart, contact the store and view beautiful products </p>
+                    <a href="https://github.com/Sanjana1304/IDEA" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+                <div class="work" style="background-image: url('img/exam_pic.jpeg'); height: 170px; object-fit: cover;">
+                    <h2>Exam Performance Analysis</h2>
+                    <p class="work_details">An application created for teachers and students to view their exam progress report and analysis.</p>
+                    <a href="https://github.com/Sanjana1304/Exam-Performance-Analysis" target="_blank"><p class="lm"><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+                <div class="work" style="background-image: url('img/music_app.jpeg'); height: 170px; object-fit: cover; background-repeat: no-repeat;">
+                    <h2>Music Player App</h2>
+                    <p class="work_details">A music player app where can where users can listen to songs, pause it, play next/previous with beautiful animations</p>
+                    <a href="https://github.com/Sanjana1304/IDEA" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+            </div>
+            <div class="work3" id="third3">
+                <div class="work" style="background-image: url('img/calc_app.jpeg'); height: 170px; object-fit: cover;">
+                    <h2>Simple Calculator</h2>
+                    <p class="work_details">A simple calculator using HTML,CSS and JavaScript</p>
+                    <a href="https://github.com/Sanjana1304/Calculator" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+                <div class="work" style="background-image: url('img/tictactoe.jpeg'); height: 170px; object-fit: cover;">
+                    <h2 style="margin-top: -40px;">Tic Tac Toe Game</h2>
+                    <p class="work_details" style="margin-top: 40px;">Tic Tac Toe game using HTML,CSS,JAVASCRIPT</p>
+                    <a href="https://github.com/Sanjana1304/Tic-Tac-Toe" target="_blank"><p class="lm"><br><br><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+                <div class="work" style="background-image: url('img/weather.jpeg'); height: 170px; object-fit: cover;">
+                    <h2>Find My Weather App</h2>
+                    <p class="work_details">A simple weather application where users can enter any state/city and can get to know the current temperature of that particular place.</p>
+                    <a href="https://github.com/Sanjana1304/IDEA" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+            </div>
+            <div class="work3" id="four3">
+                <div class="work" style="background-image: url('img/numbers.jpeg'); height: 170px; object-fit: cover;">
+                    <h2>Playing With Numbers</h2>
+                   <p class="work_details">Playing With Numbers using JAVA programming language.</p>
+                    <a href="https://github.com/Sanjana1304/Playing-with-Numbers" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+                <div class="work" style="background-image: url('img/bookstore.jpeg'); height: 170px; object-fit: cover;">
+                    <h2>Book Store Application</h2>
+                    <p class="work_details">A book storage application that allows users to manage their book collection.</p>
+                    <a href="https://github.com/Sanjana1304/Book-Store-Application" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+                <div class="work" style="background-image: url('img/todo.jpeg'); height: 170px; object-fit: cover;">
+                    <h2 style="color: black;">To do List App</h2>
+                    <p class="work_details">A simple To-do list app where users can add their tasks based on priority and can view all their tasks</p>
+                    <a href="https://github.com/Sanjana1304/To-do-List" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+            </div>
+        
+        
+        </div>
+        
+        <!--<div class="navigation">
+            <div class="leftarrow"> <i class="fas fa-chevron-left"></i></div>
+            <div class="rightarrow"> <i class="fas fa-chevron-right"></i></div>
+        </div> -->
+        
+
+    </section>
+    <section class="contactme" id="contactme">
+        <div class="contact_info">
+            <h1>Contact Me</h1>
+            <a href="mailTo:sensanjana072@gmail.com" class="mymail"><i class="fas fa-envelope" style="color: red;"></i>  sensanjana072@gmail.com</a>
+            <p><i class="fas fa-phone"  style="color: red;"></i> +91 1234567890</p>
+            <div class="social_media">
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/sanjana-acharya-a84b03231" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Sanjana1304" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1MQNhJerG5qQ3TccG8YtQoz5FzpNEE4rm/view?usp=share_link" target="_blank" ><div class="my_resume">Check My Resume  <img src="img/resumeShareicon.png" width="16px" height="16px"></div></a>
+        </div>
+        <div class="contact_form">
+            <input type="text" class="input_name" id="input_name" placeholder="Your Name">
+            <input type="email" class="input_mail" id="input_mail" placeholder="Your Email">
+            <textarea name="input_msg" class="input_msg" id="input_msg" cols="30" rows="10" placeholder="Your Message..."></textarea>
+            <div class="submitBox"><button class="submit" id="submit">Submit</button></div>
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+</html>
