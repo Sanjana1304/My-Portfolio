@@ -413,25 +413,26 @@ ul a:hover::before ,.element:hover::before, .active::before{
 
 }
 @media only screen and (max-width: 900px) {
-    .services,.work3{
+    .services,.work3,.main-proj{
         flex-direction: column;
     }
+    #main_works .main-proj .work.m{
+        width: calc(95%);
+    }
+    
     .service{
         width: calc(90%);
         margin-bottom: 5%;
     }
     .work{
-        width: calc(100%);
+        width: calc(95%);
         margin-bottom: 5%;
+        
         /* background-image: url('img/music_app.jpeg'); width: calc(120%); height: 170px; object-fit: cover; */
     }
     
 }
-@media only screen and (max-width: 800px){
-    .work{
-        width: calc(90%);
-    }
-}
+
 .work{
     padding: 80px 20px;
 }
