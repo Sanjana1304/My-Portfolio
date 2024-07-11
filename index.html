@@ -10,12 +10,13 @@
 </head>
 <body onload=main_sliding()>
     <section class="hero" id="hero">
+        <canvas id="particles"></canvas>
         <div class="header">
-            <video autoplay muted loop id="bg-video">
+            <!-- <video autoplay muted loop id="bg-video">
                 <source src="img/bg_video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-              </video>
-            <h1><span style="color: rgb(255, 0, 38);" id="letter" class="letter">S</span>anjana.</h1>
+              </video> -->
+            <h1><span style="color: rgb(255, 0, 38);" id="letter" class="letter">S</span>anjana's Portfolio</h1>
             <div class="menu-icon" id="menu-icon">
                 <i class="fas fa-bars"></i>
             </div>
@@ -25,7 +26,7 @@
                     <li class="top_list"><a href="index.html">Home</a></li>
                     <li class="top_list"><a href="#about">About</a></li>
                     <li class="top_list"><a href="#my_services">Services</a></li>
-                    <li class="top_list"><a href="#my_works">My works</a></li>
+                    <li class="top_list"><a href="#main_works">My works</a></li>
                     <li class="top_list"><a href="#contactme">Contact</a></li>
                 </ul>
             </nav>
@@ -37,10 +38,10 @@
         </div>
     </section>
     <section class="about" id="about">
-        <img src="img/about_pic.png" alt="Myimage" class="myimage" id="myimage">
+        <img src="img/business_pic.jpeg" alt="Myimage" class="myimage" id="myimage">
         <div class="about-info">
             <h1>About Me</h1>
-            <p class="about_desc">Hey there,<br/>I'm Sanjana S Acharya, a dedicated and enthusiastic learner. Currently pursuing my BTech in Computer Science and Engineering at Presidency University, Bangalore, I thrive on challenges and continuously seek to expand my knowledge. As a self-taught programmer, I am passionate about exploring new technologies and mastering Data Structures and Algorithms using Java for Competitive programming. Moreover, I actively build websites using Javascript, aiming to share my programming skills and collaborate with the vibrant developer community in GitHub. Let's learn and grow together!</p>
+            <p class="about_desc">Hey there,<br/>I'm Sanjana S Acharya, a dedicated and enthusiastic learner. Currently pursuing my BTech in Computer Science and Engineering at Presidency University, Bangalore, I thrive on challenges and continuously seek to expand my knowledge. As a self-taught programmer, I am passionate about exploring new technologies and mastering Data Structures and Algorithms using Java for Competitive programming. Moreover, I actively build websites using React.js, aiming to share my programming skills and collaborate with the vibrant developer community in GitHub. Let's learn and grow together!</p>
             <div class="three-elements">
                 <p class="element" id="skills">Skills</p>
                 <p class="element" id="experience">Experience</p>
@@ -116,8 +117,30 @@
            
         </div>
     </section>
+    <section class="my_works" id="main_works">
+        <h1>My Main Projects</h1>
+        <br>
+        <div class="main-proj">
+            <div class="work m" style="background-image: url('img/movie_bg.jpg'); height: 170px; object-fit: cover;">
+                    <h2>Movie Ticket Booking System!</h2>
+                    <p class="work_details">Application where users can surf movies and theatres in any city and can experience a hassfle-free booking.</p>
+                    <a href="https://github.com/Sanjana1304/Movie-Ticket-Booking-System" target="_blank"><p class="lm"><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+                <div class="work m" style="background-image: url('img/recipe_pic.jpg'); height: 170px; object-fit: cover;">
+                    <h2>Recipe Finder and Meal Planner</h2>
+                    <p class="work_details">A react based recipe finder app which helps users to browse for recipes based on ingredients, dishes and save them for later use. The app also helps users to get a curated meal plan based on their target calories and diet type.</p>
+                    <a href="https://github.com/Sanjana1304/Recipe-finder-and-Meal-Planner" target="_blank"><p class="lm"><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+                <div class="work m" style="background-image: url('img/sudoku_pic.jpg'); height: 170px; object-fit: cover;">
+                    <h2 style="color: black">Sudoku Solver</h2>
+                    <p class="work_details">A sudoku game where users can either PLAY SUDOKU OR PROVIDE THE QUESTION AND GET THE SOLUTION.</p>
+                    <a href="https://github.com/Sanjana1304/Sudoku-Solver" target="_blank"><p class="lm" style="color: rgb(93, 84, 84);"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+        </div>
+    </section>
     <section class="my_works" id="my_works">
-        <h1>My Works</h1>
+        <h1>Other Projects</h1>
+        
        
         <div class="works">
             <div class="work3" id="first3">
@@ -126,48 +149,54 @@
                     <p class="work_details">Introducing Intelligent Digital Educational Assist: a Python app with Tkinter GUI where users interact with modules, increasing engagement. Features include activity tracking, history, a library for saving lectures, and a recommendation system based on past views.</p>
                     <a href="https://github.com/Sanjana1304/IDEA" target="_blank"><p class="lm"><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
                 </div>
-                <div class="work" style="background-image: url('img/alumni_pic.jpeg'); height: 170px; object-fit: cover;">
-                    <h2 style="color: black;">Alumni Information System</h2>
-                    <p class="work_details">To build a system that will be able to manage alumni data of a school and provide easy access to the same.To allow old and new students of the school to communicate with each other.</p>
-                    <a href="https://github.com/Sanjana1304/Alumni-Information-System" target="_blank"><p class="lm"><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                
+                <div class="work" style="background-image: url('img/twitter_app_pic.jpg'); height: 170px; object-fit: cover;">
+                    <h2 style="color: black;">Twitter-like App</h2>
+                    <p class="work_details">A react based twitter-like web application where users can see, post, search and delete tweets and also explore trending tweets.</p>
+                    <a href="https://github.com/Sanjana1304/Twitter-app" target="_blank"><p class="lm"><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
                 </div>
+
+                <div class="work" style="background-image: url('img/netflix_app_pic.jpg'); height: 170px; object-fit: cover;">
+                    <h2>Netflix Homepage clone</h2>
+                    <p class="work_details"> A responsive Netflix homepage clone using HTML,CSS and JavaScript.</p>
+                    <a href="https://github.com/Sanjana1304/Netflix-Homepage-Clone" target="_blank"><p class="lm"><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+                
+                
+            </div>
+            <div class="work3" id="second3">
                 <div class="work" style="background-image: url('img/action_pic.jpeg'); height: 170px; object-fit: cover;">
                     <h2 style="color: black">Action Request System</h2>
                     <p class="work_details">The product developed would receive customer requests that will be sent to the appropriate faculty. The faculty can then develop software for their clients without extensive consultation with the customers.</p>
                     <a href="https://github.com/Sanjana1304/Action-Request-System" target="_blank"><p class="lm" style="color: black;"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
                 </div>
-            </div>
-            <div class="work3" id="second3">
-                <div class="work" style="background-image: url('img/ecommerce.jpeg'); height: 170px; object-fit: cover;">
-                    <h2>E-commerce App</h2>
-                    <p class="work_details">A clothing e-commerce store where users can buy clothes, add it to their cart, contact the store and view beautiful products </p>
-                    <a href="https://github.com/Sanjana1304/IDEA" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                <div class="work" style="background-image: url('img/movie_bg.jpg'); height: 170px; object-fit: cover;">
+                    <h2>Movie Finder App</h2>
+                    <p class="work_details">A web application using React.js where users can find movies with its details using API fetching </p>
+                    <a href="https://github.com/Sanjana1304/Movie-Finder-App" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
                 </div>
-                <div class="work" style="background-image: url('img/exam_pic.jpeg'); height: 170px; object-fit: cover;">
-                    <h2>Exam Performance Analysis</h2>
-                    <p class="work_details">An application created for teachers and students to view their exam progress report and analysis.</p>
-                    <a href="https://github.com/Sanjana1304/Exam-Performance-Analysis" target="_blank"><p class="lm"><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                <div class="work" style="background-image: url('img/task_app_pic.webp'); height: 170px; object-fit: cover;">
+                    <h2 style="color: black;">Task Manager App</h2>
+                    <p class="work_details">A react based task manager app which performs CRUD operations</p>
+                    <a href="https://github.com/Sanjana1304/Task-Manager-App" target="_blank"><p class="lm"><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                </div>
+            
+            </div>
+            <div class="work3" id="third3">
+                <div class="work" style="background-image: url('img/amazon_app_pic.jpg'); height: 170px; object-fit: cover;">
+                    <h2>Amazon Clone</h2>
+                    <p class="work_details">A simple Amazon clone using html,css and js</p>
+                    <a href="https://github.com/Sanjana1304/AmazonClone" target="_blank"><p class="lm"><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
                 </div>
                 <div class="work" style="background-image: url('img/music_app.jpeg'); height: 170px; object-fit: cover; background-repeat: no-repeat;">
                     <h2>Music Player App</h2>
                     <p class="work_details">A music player app where can where users can listen to songs, pause it, play next/previous with beautiful animations</p>
-                    <a href="https://github.com/Sanjana1304/IDEA" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                    <a href="https://github.com/Sanjana1304/Basic-Front-End-Projects/tree/main/MusicPlayerApp" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
                 </div>
-            </div>
-            <div class="work3" id="third3">
-                <div class="work" style="background-image: url('img/calc_app.jpeg'); height: 170px; object-fit: cover;">
-                    <h2>Simple Calculator</h2>
-                    <p class="work_details">A simple calculator using HTML,CSS and JavaScript</p>
-                    <a href="https://github.com/Sanjana1304/Calculator" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
-                </div>
-                <div class="work" style="background-image: url('img/tictactoe.jpeg'); height: 170px; object-fit: cover;">
-                    <h2 style="margin-top: -40px;">Tic Tac Toe Game</h2>
-                    <p class="work_details" style="margin-top: 40px;">Tic Tac Toe game using HTML,CSS,JAVASCRIPT</p>
-                    <a href="https://github.com/Sanjana1304/Tic-Tac-Toe" target="_blank"><p class="lm"><br><br><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
-                </div>
+                
                 <div class="work" style="background-image: url('img/weather.jpeg'); height: 170px; object-fit: cover;">
                     <h2>Find My Weather App</h2>
-                    <p class="work_details">A simple weather application where users can enter any state/city and can get to know the current temperature of that particular place.</p>
+                    <p class="work_details">A simple weather application where users can enter any state/city and can get to know the current temperature of that particular place using API fetching.</p>
                     <a href="https://github.com/Sanjana1304/IDEA" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
                 </div>
             </div>
@@ -177,25 +206,21 @@
                    <p class="work_details">Playing With Numbers using JAVA programming language.</p>
                     <a href="https://github.com/Sanjana1304/Playing-with-Numbers" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
                 </div>
-                <div class="work" style="background-image: url('img/bookstore.jpeg'); height: 170px; object-fit: cover;">
-                    <h2>Book Store Application</h2>
-                    <p class="work_details">A book storage application that allows users to manage their book collection.</p>
-                    <a href="https://github.com/Sanjana1304/Book-Store-Application" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                <div class="work" style="background-image: url('img/currency_app_pic.jpg'); height: 170px; object-fit: cover;">
+                    <h2>Currency Converter</h2>
+                    <p class="work_details">A web application which is used to convert currency from one unit to other.</p>
+                    <a href="https://github.com/Sanjana1304/Basic-Front-End-Projects/tree/main/Currencyconverter" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
                 </div>
-                <div class="work" style="background-image: url('img/todo.jpeg'); height: 170px; object-fit: cover;">
-                    <h2 style="color: black;">To do List App</h2>
-                    <p class="work_details">A simple To-do list app where users can add their tasks based on priority and can view all their tasks</p>
-                    <a href="https://github.com/Sanjana1304/To-do-List" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
+                <div class="work" style="background-image: url('img/kfc_app_pic.webp'); height: 170px; object-fit: cover;">
+                    <h2>KFC Landing Page</h2>
+                    <p class="work_details">A responsive web design for KFC-Clone</p>
+                    <a href="https://github.com/Sanjana1304/Basic-Front-End-Projects/tree/main/KFC_LandingPage" target="_blank"><p class="lm"><br><br><br><br><br><br>View Project <img src="img/resumeShareicon.png" alt="" width="16px" height="16px"></p></a>
                 </div>
+                
             </div>
         
         
         </div>
-        
-        <!--<div class="navigation">
-            <div class="leftarrow"> <i class="fas fa-chevron-left"></i></div>
-            <div class="rightarrow"> <i class="fas fa-chevron-right"></i></div>
-        </div> -->
         
 
     </section>

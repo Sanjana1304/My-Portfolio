@@ -9,11 +9,19 @@ body{
 }
 .hero{
     position: relative;
-    /* background-image: url("img/hero_bg.jpeg"); */
-
+    
+}
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the particles canvas behind other content */
+    background-color: black; /* Fallback background color */
 }
 
-#bg-video {
+/* #bg-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,8 +29,8 @@ body{
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1; /* Place the video behind other content */
-  }
+    z-index: -1; 
+  } */
 a{
     color: white;
 }
@@ -30,12 +38,12 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 10px 5px;
-   
+    position: relative;
 }
 
 .header h1{
     margin-left: 65px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .letter{
     display: inline-block;
@@ -136,7 +144,9 @@ ul a:hover::before ,.element:hover::before, .active::before{
 }
 
 .about{
+    
     display: flex;
+
     padding: 30px 60px;
     justify-content: space-between;
 }
@@ -225,20 +235,25 @@ ul a:hover::before ,.element:hover::before, .active::before{
 }
 @media only screen and (max-width: 900px) {
     .myimage{
-        height: 300px;
-        width: calc(90%);
+        margin: auto;
+        height: 400px;
+        width: calc(50%);
         object-fit: cover;
+        margin-bottom: 2.5rem;
     }
     .about-info{
+        
         width: calc(90%);
         margin-left: 3%;
     }
     .about{
+        
         flex-direction: column;
         /* text-align: center; */
         justify-content: center;
     }
 }
+
 @media only screen and (min-width: 800px) {
     .about{
         margin-top: 2rem;
@@ -278,9 +293,26 @@ ul a:hover::before ,.element:hover::before, .active::before{
 }
 .services, .works{
     display: flex;
-    margin-top: 2rem;
+    
     justify-content: space-between;
     /* border: 1px solid wheat; */
+}
+.main-proj{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1rem; */
+    
+    /* grid-template: repeat(1,1fr)/repeat(3,1fr); */
+    width: 100%;
+}
+.main-proj .work.m{
+    cursor: pointer;
+    width: calc(28%);
+    border: 1px solid white;
+    padding: 20px;
+    padding-top:5rem;
+    padding-bottom: 5rem;
+    background-size: cover;
 }
 #first3,#second3,#third3,#four3{
     display: none;
@@ -325,7 +357,7 @@ ul a:hover::before ,.element:hover::before, .active::before{
     left: 0;
     width: 100%;
     height: 0%;
-    background-color: rgb(243, 44, 44);
+    background-color: rgb(30, 30, 30);
     transition: top 0.5s ease,opacity 0.5s ease, height 0.5s ease;
 }
 
@@ -334,7 +366,7 @@ ul a:hover::before ,.element:hover::before, .active::before{
     opacity: 1;
     height: 100%;
 }
-.work:hover .lm{
+.work:hover .lm,.workm:hover .lm{
     position: relative;
     
 }
@@ -474,4 +506,25 @@ box-shadow: 1px 3px 19px 0px #C91500;
         margin-left: 10%;
     }
 
+}
+@media only screen and (max-width: 500px) {
+    
+    .hero{
+        width: 100vw;
+    }
+    .menu-icon, #nav ul{
+        display: none;
+    }
+    .fas.fa-bars{
+        display: none;
+    }
+    
+   
+    .letter{
+        width: fit-content;
+        display: inline-block;
+        animation: none;
+    }
+    
+    
 }
