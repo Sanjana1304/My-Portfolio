@@ -9,28 +9,19 @@ body{
 }
 .hero{
     position: relative;
+    /* border: 2px solid rgb(224, 70, 70); */
     
 }
 #particles {
     position: absolute;
+    /* border: 1px solid white; */
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+   height: 700px;
     z-index: -1; /* Place the particles canvas behind other content */
     background-color: black; /* Fallback background color */
 }
-
-/* #bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1; 
-  } */
 a{
     color: white;
 }
@@ -136,18 +127,18 @@ ul a:hover::before ,.element:hover::before, .active::before{
 
 
 .main{
+    /* sborder: 1px solid rgb(26, 193, 185); */
     align-items: center;
-    padding: 200px 100px;
+    padding: 130px 100px;
     font-size: x-large;
     transform: scaleX(-1);
     transition: transform 0.5s ease-in;
 }
 
 .about{
-    
     display: flex;
-
-    padding: 30px 60px;
+    /* border: 1px solid white; */
+    padding: 10px 60px;
     justify-content: space-between;
 }
 .about-info{
@@ -176,9 +167,6 @@ ul a:hover::before ,.element:hover::before, .active::before{
         width: calc(30%);
         /* border: 1px solid rgb(80, 42, 233); */
         margin-left: 20px;
-    }
-    .about{
-        padding: 20px 50px;
     }
 }
 .three-elements{
@@ -254,7 +242,7 @@ ul a:hover::before ,.element:hover::before, .active::before{
     }
 }
 
-@media only screen and (min-width: 800px) {
+/* @media only screen and (min-width: 800px) {
     .about{
         margin-top: 2rem;
     }
@@ -268,18 +256,18 @@ ul a:hover::before ,.element:hover::before, .active::before{
     .about{
         margin-top: 9rem;
     }
-}
-@media only screen and (min-width: 1300px) {
+} */
+/* @media only screen and (min-width: 1300px) {
     .about{
         margin-top: 12rem;
         
     }
-}
-@media only screen and (min-width: 1400px) {
+} */
+/* @media only screen and (min-width: 1400px) {
     .about{
         margin-top: 15rem;
     }
-}
+} */
 
 .my_services, .my_works, .contactme{
     padding: 40px 100px;
