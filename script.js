@@ -111,27 +111,6 @@ skillBox = document.getElementById("skillBox");
 expBox = document.getElementById("expBox");
 eduBox =  document.getElementById("eduBox");
 
-// const sections = document.querySelectorAll("section");
-// const options = {
-//     threshold: 0.5, // Adjust the threshold as needed
-// };
-
-// const observer = new IntersectionObserver(function (entries, observer) {
-//     entries.forEach((entry) => {
-//         if (entry.isIntersecting) {
-//             entry.target.classList.add("skillBox_active");
-//             //skillBox.style.transform = "translateX(0)";
-
-//         } else {
-//             entry.target.classList.remove("skillBox_active");
-//         }
-//     });
-// }, options);
-
-// sections.forEach((section) => {
-//     observer.observe(section);
-// });
-
 skills.addEventListener("click",function(){
     this.classList.toggle("active");
     deactivateAllExcept(this);
@@ -196,22 +175,6 @@ education.addEventListener("click",function(){
     expBox.style.position = "absolute";
 });
 
-// const container = document.querySelector('.works');
-// let currentIndex = -1;
-// const divsPerPage = 3; // Number of divs to display per page
-// const divWidth = 37; // Width of each div as a percentage
-
-// function scrollToIndex(index) {
-//     currentIndex = index;
-//     const scrollX = index * divWidth;
-//     container.style.transform = `translateX(-${scrollX}%)`;
-// }
-
-// setInterval(() => {
-//     // Automatically scroll to the next page
-//     const nextPageIndex = (currentIndex + divsPerPage) % container.children.length;
-//     scrollToIndex(nextPageIndex);
-// }, 3000); 
 const sections = document.querySelectorAll('.work3');
 let currentSectionIndex = 0;
 
@@ -317,3 +280,7 @@ function DistanceBetween(p1,p2) {
 create();
 particles();
 
+
+
+
+//now in this code, i have created a nav tag which is displayed in flex row when width is high, when width is small, the hamburger menu (fafabars) will be displayed. but when i click on it, it opens as required but it does'nt come on top of the exisiting content and instead the exisiting content goes down. pls resolve and give. read the code thoroughly and give the solution. if the whole code is too long, give only the necessary code that has to be changed.

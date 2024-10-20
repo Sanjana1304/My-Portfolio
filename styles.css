@@ -9,12 +9,9 @@ body{
 }
 .hero{
     position: relative;
-    /* border: 2px solid rgb(224, 70, 70); */
-    
 }
 #particles {
     position: absolute;
-    /* border: 1px solid white; */
     top: 0;
     left: 0;
     width: 100%;
@@ -102,9 +99,9 @@ ul a:hover::before ,.element:hover::before, .active::before{
         cursor: pointer;
     }
     nav{
-        display: none;
+        position: fixed;
+        /* display: none; */
         opacity: 0;
-        position: relative;
         transform: translateX(100%);
         transition: transform 0.5s ease, opacity 0.5s ease;
     }
@@ -118,6 +115,7 @@ ul a:hover::before ,.element:hover::before, .active::before{
         width: 100%;
         overflow-y: visible;
         text-align: center;
+        z-index: 999;
     }
     li{
         padding: 10px;
